@@ -1,11 +1,11 @@
 package com.example.chatting.Adapter
 
+import android.content.ClipData
 import com.example.chatting.R
 import com.xwray.groupie.GroupieViewHolder
-import com.xwray.groupie.Item
 import kotlinx.android.synthetic.main.chat_right_me.view.*
 
-class ChatRightMe(val msg : String) : Item<GroupieViewHolder>() {
+class ChatRightMe(val msg: String) : ClipData.Item<GroupieViewHolder>() {
 
 
     override fun getLayout(): Int {

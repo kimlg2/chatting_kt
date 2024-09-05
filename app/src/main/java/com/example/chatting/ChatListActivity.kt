@@ -1,9 +1,9 @@
 package com.example.chatting
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import com.example.chatting.Adapter.Useritem
 import com.google.firebase.firestore.FirebaseFirestore
 import com.xwray.groupie.GroupAdapter
@@ -14,7 +14,7 @@ class ChatListActivity : AppCompatActivity() {
     private val TAG = ChatListActivity::class.java.simpleName
     val db = FirebaseFirestore.getInstance()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    fun onCreate(savedInstanceState: Bundle?, recyclerview_list: Any) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_list)
         myChatList.setOnClickListener {
